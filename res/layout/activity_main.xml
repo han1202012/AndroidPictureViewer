@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_im"
+    android:orientation="vertical">
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:gravity="center">
+        
+        <Button 
+            android:id="@+id/alpha_plus"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:text="透明度+"
+            android:background="@drawable/bg_bt"
+            android:onClick="onClick"/>
+        
+        <Button 
+            android:id="@+id/alpha_minus"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:text="透明度-"
+            android:background="@drawable/bg_bt"
+            android:onClick="onClick"/>
+        
+        <Button 
+            android:id="@+id/prev_page"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:text="上一张"
+            android:background="@drawable/bg_bt"
+            android:onClick="onClick"/>
+        
+        <Button 
+            android:id="@+id/next_page"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:text="下一张"
+            android:background="@drawable/bg_bt"
+            android:onClick="onClick"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:gravity="center">
+        
+        <Button 
+            android:id="@+id/big"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:text="放大"
+            android:background="@drawable/bg_bt"
+            android:onClick="onClick"/>
+        
+        <Button 
+            android:id="@+id/small"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:text="缩小"
+            android:background="@drawable/bg_bt"
+            android:onClick="onClick"/>
+        
+        <Button 
+            android:id="@+id/turn_left"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:text="左转"
+            android:background="@drawable/bg_bt"
+            android:onClick="onClick"/>
+        
+        <Button 
+            android:id="@+id/turn_right"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:text="右转"
+            android:background="@drawable/bg_bt"
+            android:onClick="onClick"/>
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/image_all"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mary1"/>
+    
+    
+
+</LinearLayout>
